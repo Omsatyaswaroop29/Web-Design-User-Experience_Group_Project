@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Feedback</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="validationsjs.js"></script>
+    <style>
+        #container {
+            padding: 20px;
+            background-color: rgb(183, 189, 195);
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .error-message {
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Global Givers</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Profession
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Volunteer</a></li>
+                            <li><a class="dropdown-item" href="#">Donar</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Organizational Head</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Signup</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="container">
+        <div id="container">
+            <h2 class="text-center">REG_FORM</h2>
+            <form id="my-form" method="post" novalidate>
+                <div class="form-group">
+                    <label>Title*:</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="title" id="miss" value="miss" required>
+                        <label class="form-check-label" for="miss">Miss</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="title" id="mr" value="mr" required>
+                        <label class="form-check-label" for="mr">Mr.</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="title" id="mrs" value="mrs" required>
+                        <label class="form-check-label" for="mrs">Mrs.</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="firstName">First Name*:</label>
+                    <input type="text" class="form-control" name="firstName" id="firstName" placeholder="First Name">
+                    <div id="error_firstName" class="error-message" style="display: none;">Invalid Name, Please enter valid name.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name*:</label>
+                    <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last Name">
+                    <div id="error_lastName" class="error-message" style="display: none;">Invalid Name, Please enter valid name.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="emailId">Email Id*:</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="yourname@domain.com">
+                    <div id="error_email" class="error-message" style="display: none;">Invalid Email, Please enter valid email.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number*:</label>
+                    <input type="text" class="form-control" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx">
+                    <div id="error_phoneNumber" class="error-message" style="display: none;">Invalid Phone Number, Please enter valid phone number.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="zipCode">ZipCode*:</label>
+                    <input type="text" class="form-control" name="zipCode" id="zipCode" placeholder="xxxxxx">
+                    <div id="error_zipCode" class="error-message" style="display: none;">Invalid Zip Code, Please enter a 5-digit Zip Code.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="selectBox">Select Option that best suits you:</label>
+                    <select class="form-control" id="selectBox" onchange="itemDrop()">
+                        <option value="">--Choose--</option>
+                        <option value="student">student</option>
+                        <option value="working prof">working prof.</option>
+                        <option value="looking for a intern/part-time">looking for a intern/part-time</option>
+                        <option value="seeking full time role">seeking full time roles</option>
+                        <option value="meet other professionals">meet other professionals</option>
+                    </select>
+                </div>
+
+                <div class="form-group" id="dynamicCheckboxDiv" style="display: none;">
+                    <input type="checkbox" id="dynamicCheckbox" onchange="tipCheckBox()"> confirm
+                </div>
+
+                <div class="form-group" id="dynamicTextFieldDiv" style="display: none;">
+                    <label for="dynamicTextField">on a scale of 1 to 10, how likely are you to recommend us?</label>
+                    <input type="text" class="form-control" id="dynamicTextField">
+                    <div id="error_dynamicTextField" class="error-message" style="display: none;">Field is required</div>
+                </div>
+
+                <div class="form-group">
+                    <label id="howDidYouHear" for="howDidYouHear">How did you hear*:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="source" value="facebook">
+                        <label class="form-check-label">Facebook</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="source" value="google">
+                        <label class="form-check-label">Google</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="source" value="yelp">
+                        <label class="form-check-label">Yelp</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address*:</label>
+                    <input type="text" class="form-control" name="address" id="address" placeholder="Boston, MA">
+                    <div id="error_address" class="error-message" style="display: none;">Invalid Address, Please enter a valid Street Address without special characters.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Comments*:</label>
+                    <textarea class="form-control" name="text" id="comments" placeholder="Your comments" rows="5"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button id="submitBtn" type="submit" class="btn btn-primary" disabled>Register</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-6">
+                <a class="nav-link" href="aboutus.html">
+                    <button type="button" class="btn btn-outline-light btn-primary btn-block">About Us</button>
+                </a>
+                <p>The platform serves as a digital gateway for individuals and organizations
+                    to connect, collaborate, and contribute to meaningful causes and social impact initiatives. It
+                    aims to facilitate charitable giving, volunteer engagement, and awareness-building for a
+                    diverse range of non-profit organizations and community projects worldwide.
+                    "Empowering change, one click at a time." This statement describes the platform's mission of
+                    empowering individuals to make a positive impact through accessible and streamlined
+                    options for giving, volunteering, and community involvement. It highlights the platform's
+                    commitmen</p>
+            </div>
+            <div class="col-md-3">
+                <h4>Contact</h4>
+                <ul class="list-unstyled">
+                    <li><a href="mailto:info@ourwebsite.com" class="text-white">info@ourwebsite.com</a></li>
+                    <li>+1 (123) 456-7890</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+
+            </div>
+        </div>  
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
