@@ -93,7 +93,7 @@ To get started with the PhilanthroLink platform, follow these steps:
 ## Contributors
 
 - [OMSATYASWAROOP](https://github.com/Omsatyaswaroop29)
-- [Team Member 1](https://github.com/team-member-1)
+- [Rachana Manjunath](https://github.com/RachanaManjunath04)
 - [Team Member 2](https://github.com/team-member-2)
 - [Team Member 3](https://github.com/team-member-3)
 
