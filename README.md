@@ -1,6 +1,4 @@
-<<<<<<< Updated upstream
-# Web-Design-User-Experience_Group_Project
-=======
+
 # Global Givers
 
 ## Project Overview
@@ -96,9 +94,9 @@ To get started with the PhilanthroLink platform, follow these steps:
 ## Contributors
 
 - [OMSATYASWAROOP](https://github.com/Omsatyaswaroop29)
-- [Team Member 1](https://github.com/team-member-1)
-- [Team Member 2](https://github.com/team-member-2)
-- [Team Member 3](https://github.com/team-member-3)
+- [Rachana Manjunath](https://github.com/RachanaManjunath04)
+- [Gautham Venkata Krishna Prasad](https://github.com/gauthamkris7neu)
+- [Urmi Patel](https://github.com/UrmiPatel-002772667)
 
 ## License
 
@@ -266,4 +264,3 @@ alert & alert-danger
 
 Purpose: To showcase warning or error messages in a styled manner.
 Usage: Used to display an error message for invalid login credentials.
->>>>>>> Stashed changes

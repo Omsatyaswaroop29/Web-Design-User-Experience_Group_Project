@@ -1,0 +1,84 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg-image {
+    background-image: url('/resources/GG\ Image\ 1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.login-section {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.container-login {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-custom {
+    width: 150px;
+    margin: 10px;
+    background-color: #36454F;
+}
+
+.btn-custom:hover {
+    background-color: #2A363E;
+}
+
+.btn-form {
+    width: 35%;
+    background-color: #36454F;
+}
+
+.btn-form:hover {
+    background-color: #2A363E;
+}
+
+
+.logo {
+    width: 110px;
+    margin-bottom: 30px;
+}
+
+.form-section {
+    display: none;
+    padding: 20px;
+}
+
+.social-btns .btn {
+    margin: 5px;
+}
+
+.divider {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.divider:before,
+.divider:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: #000;
+}
+
+.divider:before {
+    left: 0;
+}
+
+.divider:after {
+    right: 0;
+}
+
+.divider-text {
+    padding: 0 10px;
+}
