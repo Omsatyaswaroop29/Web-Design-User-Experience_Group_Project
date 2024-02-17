@@ -24,17 +24,17 @@
 .custom-card {
     transition: transform 0.2s, box-shadow 0.2s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: none; /* Remove Bootstrap's default border */
+    border: none; 
 }
 
 .custom-card:hover {
-    transform: scale(1.03); /* Slight scaling on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    transform: scale(1.03); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
 .custom-card img {
-    height: 200px; /* Fixed height to ensure uniformity */
-    object-fit: cover; /* Make sure images cover the area without distortion */
+    height: 200px;
+    object-fit: cover; 
 }
 
 .custom-card:hover {
@@ -81,7 +81,6 @@
     }
 }
 
-
 .jumbotron {
     margin-bottom: 50px;
     padding: 100px 0;
@@ -94,6 +93,7 @@ footer.footer {
     bottom: 0;
     width: 100%;
 }
+
 .InputBox{
     font-family: "lucida grande", "Lucida Sans Unicode", tahoma, sans-serif;
     color: #333;

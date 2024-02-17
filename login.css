@@ -5,7 +5,6 @@ body, html {
 
 .bg-image {
     background-image: url('./images/GG\ Image\ 1.png');
-
     background-size: cover;
     background-position: center;
 }
