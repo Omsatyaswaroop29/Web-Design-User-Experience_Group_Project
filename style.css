@@ -47,19 +47,39 @@
     object-fit: cover; 
     
 }
-
+.imgEVF{
+    height: 200px;
+    width: 300px;
+}
 @media (max-width: 576px) {
     .btn {
         padding: 8px 12px;
         font-size: 14px;
+    }
+    img.imgEVF{
+        height: 200px;
+        max-width: 300px;
+    }
+    div.img_container{
+        width: 300px !important;
+    }
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        text-align: center !important;
     }
 }
 @media (max-width: 768px) {
     .footer-column {
         text-align: center;  
     }
+    .imgEVF {
+        height: 200px;
+        width: 300px;
+    }
 }
-
 
 
 .jumbotron {
