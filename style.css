@@ -1,0 +1,96 @@
+#exampleCarousel .carousel-item {
+    height: 600px; 
+    overflow: hidden; 
+}
+
+#exampleCarousel .carousel-caption {
+    bottom: 5%; 
+}
+
+.navbar-brand{
+    font-size: large;
+    text-decoration: solid;
+    font-weight: bold;
+}
+#exampleCarousel .carousel-caption h5 {
+    font-size: 2rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+.custom-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none; 
+}
+.custom-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none; /* Remove Bootstrap's default border */
+}
+
+.custom-card:hover {
+    transform: scale(1.03); /* Slight scaling on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.custom-card img {
+    height: 200px; /* Fixed height to ensure uniformity */
+    object-fit: cover; /* Make sure images cover the area without distortion */
+}
+
+.custom-card:hover {
+    transform: scale(1.03); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.custom-card img {
+    height: 200px; 
+    object-fit: cover; 
+    
+}
+
+@media (max-width: 576px) {
+    .btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .footer-column {
+        text-align: center;  
+    }
+}
+
+
+
+.jumbotron {
+    margin-bottom: 50px;
+    padding: 100px 0;
+}
+
+footer.footer {
+    background-color: #343a40;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.InputBox{
+    font-family: "lucida grande", "Lucida Sans Unicode", tahoma, sans-serif;
+    color: #333;
+    font-size: 15px;
+    padding: 3px;
+    margin: 0 auto;
+    width: 250px;
+    background: #fff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    
+    display: block;
+    width: 70% !important;
+    padding: 6px 12px;
+    font-size: 15px;
+    line-height: 22px;
+    border-radius: 4px;
+    align-self: center;
+}
