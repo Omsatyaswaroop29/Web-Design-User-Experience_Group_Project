@@ -1,4 +1,3 @@
-
 # Global Givers
 
 ## Project Overview
