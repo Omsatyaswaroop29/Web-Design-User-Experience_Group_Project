@@ -5,31 +5,41 @@ function toggleLoginForm() {
     y.style.display = "none";
 }
 
+document.getElementById("emailInput").addEventListener("input", function() {
+    updateLoginButtonColor();
+    validateEmail();
+});
 
-document.getElementById("emailInput").addEventListener("input", updateLoginButtonColor);
 document.getElementById("passwordInput").addEventListener("input", updateLoginButtonColor);
 
 function updateLoginButtonColor() {
     var email = document.getElementById("emailInput").value;
     var password = document.getElementById("passwordInput").value;
 
-   
     var dummyEmail = "globalgiver@gmail.com";
     var dummyPassword = "Globalgiver123";
 
-    
     if (email === dummyEmail && password === dummyPassword) {
-        
         document.getElementById("loginButton").style.backgroundColor = "green";
     } else {
-       
         document.getElementById("loginButton").style.backgroundColor = "#36454F";
     }
 }
 
+function validateEmail() {
+    var email = document.getElementById("emailInput").value;
+    var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    var isValid = emailRegex.test(email);
+
+    if (!isValid) {
+        document.getElementById("emailInput").setCustomValidity("Please enter a valid email address");
+    } else {
+        document.getElementById("emailInput").setCustomValidity("");
+    }
+}
 
 document.getElementById("loginForm").addEventListener("submit", function(event) {
-    event.preventDefault(); 
+    event.preventDefault();
 
     var email = document.getElementById("emailInput").value;
     var password = document.getElementById("passwordInput").value;
