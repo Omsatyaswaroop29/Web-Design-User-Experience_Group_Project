@@ -47,6 +47,6 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     var dummyPassword = "Globalgiver123";
 
     if (email === dummyEmail && password === dummyPassword) {
-        window.location.href = "https://google.com/";
+        window.location.href = "landing.html";
     }
 });
