@@ -1,11 +1,17 @@
-#exampleCarousel .carousel-inner .carousel-item {
+#exampleCarousel .carousel-item {
     height: 600px; 
     overflow: hidden; 
 }
+
 #exampleCarousel .carousel-caption {
     bottom: 5%; 
 }
 
+.navbar-brand{
+    font-size: large;
+    text-decoration: solid;
+    font-weight: bold;
+}
 #exampleCarousel .carousel-caption h5 {
     font-size: 2rem; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
@@ -67,4 +73,23 @@ footer.footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+.InputBox{
+    font-family: "lucida grande", "Lucida Sans Unicode", tahoma, sans-serif;
+    color: #333;
+    font-size: 15px;
+    padding: 3px;
+    margin: 0 auto;
+    width: 250px;
+    background: #fff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    
+    display: block;
+    width: 70% !important;
+    padding: 6px 12px;
+    font-size: 15px;
+    line-height: 22px;
+    border-radius: 4px;
+    align-self: center;
 }

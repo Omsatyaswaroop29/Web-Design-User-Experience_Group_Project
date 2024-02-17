@@ -18,227 +18,171 @@
     <title>Landing Page</title>
 </head>
 <body style="margin: 0;">
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black" >
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Global Givers</a>
+            <img src="./images/GG Logo 1.png" style="height: 70px; width: 50px;">
+            <div class="text  text-white"> 
+                <a class="navbar-brand" href="#">Global Givers</a><br>
+                <h6 style="color: white;">"Making a Global Impact, Locally"</h6>   
+            </div>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Profession
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Volunteer</a></li>
-                            <li><a class="dropdown-item" href="#">Donar</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Organizational Head</a></li>
-                        </ul>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="">Mission</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link"href="">Contact Us</a> 
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="reg_form.html">Register</a>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="">About Us</a> 
+                    </li>
+                    <li class="nav-item mx-3">
+                        <button class="btn btn-light"><a class="text-decoration-none text-black" href="login.html">Sign In</a></button>
+
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <div id="exampleCarousel" class="carousel slide" data-bs-ride="carousel">
-
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-bs-target="#exampleCarousel" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#exampleCarousel" data-bs-slide-to="1"></li>
-            <li data-bs-target="#exampleCarousel" data-bs-slide-to="2"></li>
-        </ol>
-    
-        <!-- Slides -->
-        <div class="carousel-inner">
+            <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./images/artist.jpg" class="d-block w-100" alt="Image 1">
-                <div class="carousel-caption">
+                <img src="./images/GG Image 1.png" class="d-block w-100" alt="Image 2">
+                <div class="carousel-caption" >
+                    <button type="button" class="btn btn-light mb-3 h6">Donate Now!</button>
+                    <input type="text" id="Form_Search" value="" placeholder="Search Organizations, Fundraisers..." role="searchbox" class="InputBox mb-3" autocomplete="off">
                     <h5>"The simplest acts of kindness are by far more powerful than a thousand heads bowing in prayer.e"</h5>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="./images/hire_musician.jpg" class="d-block w-100" alt="Image 2">
-                <div class="carousel-caption">
-                    <h5>The measure of life is not its duration, but its donation.</h5>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./images/dancers.jpg" class="d-block w-100" alt="Image 3">
-                <div class="carousel-caption ">
-                    <h5>When we give cheerfully and accept gratefully, everyone is blessed</h5>
-                </div>
-            </div>
         </div>
-    
-        <!-- Controls -->
-        <a class="carousel-control-prev" href="#exampleCarousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#exampleCarousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </a>
-    
     </div>
     <div class="container mt-5">
         <div class="row">
-            <!-- First Card -->
             <div class="col-md-6 mb-4">
-                <div class="card custom-card">
-                    <img src="./images/paint.jpeg" class="card-img-top" alt="Featured Talent">
-                    <div class="card-body">
-                        <h5 class="card-title">Organization Profile </h5>
-                        <p class="card-text"> The platform enables donors to make monetary donations to their
-                            chosen NGOs or specific projects/initiatives. Donation features include:
-                            a. Secure payment processing with multiple payment methods (e.g., credit/debit cards,
-                            PayPal, bank transfers).
-                            b. Recurring donation options for ongoing support.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
+                <h5 class="">Our Mission</h5>
+                <p class=""> 
+                    Here, on GlobalGivers, our mission is clear: we aim to empower individuals and organizations to create positive change in the world. 
+                    Through our digital platform, we provide a gateway for people to connect, collaborate, and contribute to meaningful causes and social impact initiatives.<br><br>
+                    <b>What We Do:</b><br>
+                    <b>Facilitate Charitable Giving:</b> We enable individuals to support nonprofit organizations and community projects worldwide through secure and convenient online donations.<br><br>                            <b>Promote Volunteer Engagement:</b> We offer opportunities for individuals to volunteer their time and skills to make a difference in their communities and beyond.<br><br>
+                    <b>Raise Awareness:</b> We raise awareness about pressing social issues and advocate for change through educational content, storytelling, and community outreach.<br><br>
+                    <b>Why It Matters:</b><br>
+                    At GlobalGivers, we believe that small actions can lead to big impact. By harnessing the collective power of giving, volunteering, and community involvement, we can effect meaningful change and create a brighter future for all.</p>
             </div>
-            <!-- Second Card -->
+            <!-- Cards -->
             <div class="col-md-6 mb-4">
-                <div class="card custom-card">
-                    <img src="./images/Lan.webp" class="card-img-top" alt="Featured Talent">
-                    <div class="card-body">
-                        <h5 class="card-title">Donation Facilitation</h5>
-                        <p class="card-text">Users can explore and sign up for volunteer opportunities
-                            offered by listed NGOs and organizations. Volunteer features include:
-                            a. Volunteer opportunity listings with details such as location, date/time, required skills, and
-                            volunteer roles.
-                            b. Volunteer registration and scheduling.
-                            c. Volunteer feedback and testimonials.
-                            </p>
-                        <a href="#" class="btn btn-primary">Read More</a>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card custom-card">
+                            <img src="./images/gogirls.jpg" class="card-img-top" alt="Featured Talent">
+                            <div class="card-body">
+                                <h5 class="card-title">GoGirls NGO</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card custom-card">
+                            <img src="./images/paw.jpg" class="card-img-top" alt="Featured Talent">
+                            <div class="card-body">
+                                <h5 class="card-title">For Paws NGO</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card custom-card">
+                            <img src="./images/helping hand.png" class="card-img-top" alt="Featured Talent">
+                            <div class="card-body">
+                                <h5 class="card-title">Helping Hands NGO</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card custom-card">
+                            <img src="./images/nature.jpg" class="card-img-top" alt="Featured Talent">
+                            <div class="card-body">
+                                <h5 class="card-title">Nurture Nature Org</h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Third Card -->
-            <div class="col-md-6 mb-4">
-                <div class="card custom-card">
-                    <img src="./images/sing.jpg" class="card-img-top" alt="Featured Talent">
-                    <div class="card-body">
-                        <h5 class="card-title">Volunteer Opportunities</h5>
-                        <p class="card-text"> Users can explore and sign up for volunteer opportunities
-                            offered by listed NGOs and organizations. Volunteer features include:
-                            a. Volunteer opportunity listings with details such as location, date/time, required skills, and
-                            volunteer roles.
-                            b. Volunteer registration and scheduling.
-                            c. Volunteer feedback and testimonials.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Fourth Card -->
-            <div class="col-md-6 mb-4">
-                <div class="card custom-card">
-                    <img src="./images/dancers.jpg" class="card-img-top" alt="Featured Talent">
-                    <div class="card-body">
-                        <h5 class="card-title"> Event Updates</h5>
-                        <p class="card-text">  Based on the user's provided location or interests, the platform offers
-                            updates on fundraising events, community initiatives, workshops, and campaigns happening
-                            nearby or related to their areas of interest. Event features include:
-                            a. Event listings with details such as date, time, location, organizer, and event description.
-                            b. RSVP and ticketing options for event participation.
-                            c. Event notifications and reminders.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
-    <div class="d-flex justify-content-center align-items-center">
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#progressModal">
-        Progress Report
-      </button>
-      </div>
-      
-      <!-- Modal -->
-      <div class="modal fade" id="progressModal" tabindex="-1" aria-labelledby="progressModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="progressModalLabel">Progress Report</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <hr class="hr" />
+    <h3 class="text-center pt-5">Events, Fundraisers, Volunteering  near you</h3>
+    <div>
+        <div class="row pt-5">
+            <div class="col-3 mb-3 mx-3">
+                <img src="./images/eduv.jpg" class="img-thumbnail" style="height: 200px; width: 300px;"> 
             </div>
-            <div class="modal-body">
-              <h5>Volunteer Registered</h5>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-              </div>
+            <div class="col-8 mb-4">
+                <h5 class="text-decoration-underline">Volunteer for Education</h5>
+                <p><b>About:</b> Join us in our mission to promote girls' education and empower young girls to reach their full potential. As a Girls' Education Advocate, you will have the opportunity to make a meaningful impact by mentoring and tutoring girls in academic subjects such as math, science, and literacy. You'll also lead workshops and activities focused on building confidence, leadership skills, and self-esteem among girls.</p>
+                <p><a href="#" class="btn btn-primary">Learn More</a></p>
             </div>
-            <div class="modal-body">
-                <h5>Donae Registered</h5>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                </div>
-              </div>
-              <div class="modal-body">
-                <h5>Organizational Head  Registered</h5>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-                </div>
-              </div>
-              <div class="modal-body">
-                <h5>Anonymous Entity Registered</h5>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-                </div>
-              </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
         </div>
-      </div>
-    <footer class="bg-primary text-white mt-5">
+        <div class="row pt-5 bg-light">
+            <div class="col-3 mb-3 mx-3">
+                <img src="./images/healthv.jpg" class="img-thumbnail" style="height: 200px; width: 300px;"> 
+            </div>
+            <div class="col-8 mb-4">
+                <h5 class="text-decoration-underline">Volunteer for Healtcare</h5>
+                <p><b>About:</b> Join us in our mission to promote girls' education and empower young girls to reach their full potential. As a Girls' Education Advocate, you will have the opportunity to make a meaningful impact by mentoring and tutoring girls in academic subjects such as math, science, and literacy. You'll also lead workshops and activities focused on building confidence, leadership skills, and self-esteem among girls.</p>
+                <p><a href="#" class="btn btn-primary">Learn More</a></p>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-3 mb-3 mx-3">
+                <img src="./images/petv.jpg" class="img-thumbnail" style="height: 200px; width: 300px;"> 
+            </div>
+            <div class="col-8 mb-4">
+                <h5 class="text-decoration-underline">Run for Paws</h5>
+                <p><b>About:</b> Join us in our mission to promote girls' education and empower young girls to reach their full potential. As a Girls' Education Advocate, you will have the opportunity to make a meaningful impact by mentoring and tutoring girls in academic subjects such as math, science, and literacy. You'll also lead workshops and activities focused on building confidence, leadership skills, and self-esteem among girls.</p>
+                <p><a href="#" class="btn btn-primary">Learn More</a></p>
+            </div>
+        </div>
+        <div class="row pt-5 bg-light">
+            <div class="col-3 mb-3 mx-3">
+                <img src="./images/plantv.jpg" class="img-thumbnail" style="height: 200px; width: 300px;"> 
+            </div>
+            <div class="col-8 mb-4">
+                <h5 class="text-decoration-underline">Plantation Fundraiser</h5>
+                <p><b>About:</b> Join us in our mission to promote girls' education and empower young girls to reach their full potential. As a Girls' Education Advocate, you will have the opportunity to make a meaningful impact by mentoring and tutoring girls in academic subjects such as math, science, and literacy. You'll also lead workshops and activities focused on building confidence, leadership skills, and self-esteem among girls.</p>
+                <p><a href="#" class="btn btn-primary">Learn More</a></p>
+            </div>
+        </div>
+    </div>
+    <footer class="text-white mt-5 bg-black">
         <div class="container py-4">
             <div class="row">
                 <div class="col-md-6">
-                    <a class="nav-link" href="aboutus.html">
-                        <button type="button" class="btn btn-outline-light btn-primary btn-block">About Us</button>
-                    </a>
-                    <p>The platform serves as a digital gateway for individuals and organizations
-                        to connect, collaborate, and contribute to meaningful causes and social impact initiatives. It
-                        aims to facilitate charitable giving, volunteer engagement, and awareness-building for a
-                        diverse range of non-profit organizations and community projects worldwide.
-                        "Empowering change, one click at a time." This statement describes the platform's mission of
-                        empowering individuals to make a positive impact through accessible and streamlined
-                        options for giving, volunteering, and community involvement. It highlights the platform's
-                        commitmen.</p>
+                    
+                    <h3><img src="./images/icons8-help-48.png" style="height: 40px; width: 40px;">     Need Help?</h3>
+                    <p>Please Call <b>1-888-844-0355</b> to speak<br>to GlobalGivers Support Services.<br><br>Monday-Friday: 7 AM - 8 PM<br>Saturday and Sunday: 9 AM - 5 PM.</p>
                 </div>
                 <div class="col-md-3">
-                    <h4>Contact</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="mailto:info@ourwebsite.com" class="text-white">info@ourwebsite.com</a></li>
-                        <li>+1 (123) 456-7890</li>
-                    </ul>
+                    <h3><img src="./images/icons8-faq-50.png" style="height: 40px; width: 40px;">      FAQ's</h3>
+                    <p>Find Resources and questions here</p>
+                    <p><b>GlobalGivers FAQ’s</b></p>
                 </div>
                 <div class="col-md-3">
-                    <h4>Quick Links</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Home</a></li>
-                        <li><a href="#" class="text-white">Professions</a></li>
-                    </ul>
+                    <h3><img src="./images/icons8-email-64.png" style="height: 40px; width: 40px;">        E-Mail</h3>
+                    <p>You can email us at:</p><p href="mailto:someone@example.com">information@globalgivers.com</p>
+                    <h3>Follow Us</h3>
+                    <img src="./images/icons8-instagram-50.png" style="height: 40px; width: 40px;">
+                    <img src="./images/icons8-facebook-50.png" style="height: 40px; width: 40px;">
+                    <img src="./images/icons8-linkedin-50.png" style="height: 40px; width: 40px;">                        
+
                 </div>
             </div>  
         </div>
