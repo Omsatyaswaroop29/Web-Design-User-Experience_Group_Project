@@ -95,7 +95,7 @@ To get started with the PhilanthroLink platform, follow these steps:
 - [OMSATYASWAROOP](https://github.com/Omsatyaswaroop29)
 - [Rachana Manjunath](https://github.com/RachanaManjunath04)
 - [Gautham Venkata Krishna Prasad](https://github.com/gauthamkris7neu)
-- [Team Member 3](https://github.com/team-member-3)
+- [Urmi Patel](https://github.com/UrmiPatel-002772667)
 
 ## License
 
